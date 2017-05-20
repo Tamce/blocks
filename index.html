@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Blocks</title>
+    <script src="./contextPack.js"></script>
+    <script src="./eventSystem.js"></script>
+    <script src="./blockGame.js"></script>
+</head>
+<body>
+    <canvas id="game"></canvas>
+    <script>
+        window.onload = function () {
+            var canvas = document.getElementById("game");
+            var game = new BlockGame({
+                "canvas": canvas,
+                "plugins": []
+            });
+            game.run();
+        }
+    </script>
+</body>
+</html>
